@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>
+        GuruLab
+    </title>
+    <meta name="description" content="GuruLab">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" href="images/favicon.png">
+    <meta property="og:image" content="images/dist/preview.jpg">
+    <link rel="preload" href="css/main.min.css" as="style">
+    <link rel="preload" href="js/app.min.js" as="script">
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="container">
+        <div class="header__content">
+            <a href="./" class="header__logo">
+                <img src="./images/logo.png" alt="logo">
+            </a>
+            <nav class="header__nav">
+                <ul class="header__menu">
+                    <li><a href="#hero" class="active">Главная</a></li>
+                    <li><a href="./courses.html">Курсы</a></li>
+                    <li><a href="#educators">Ссылка</a></li>
+                    <li><a href="./news.html">Новости</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="burger mobile">
+                <input type="checkbox" id="burgerBtn" class="burger-checkbox">
+                <label for="burgerBtn">
+                    <div class="hamburger">
+                        <span class="bar bar1"></span>
+                        <span class="bar bar2"></span>
+                        <span class="bar bar3"></span>
+                        <span class="bar bar4"></span>
+                    </div>
+                </label>
+            </div>
+        </div>
+    </div>
+</header>
+<main class="main">
+    <section class="page__hero news-item" style="backgound-image: url('./images/');">
+    <div class="container">
+        <h1 class="page__hero__title">Новости</h1>
+    </div>
+</section>
+    <section class="news__article">
+    <div class="container">
+        <h2 class="title">Заголовок новости</h2>
+        <div class="news__article__content">
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod teduntlabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et erebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit am Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidulabore et dolore aliquyam erat, sed diam </p>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod teduntlabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et erebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit am Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidulabore et dolore aliquyam erat, sed diam </p>
+            <img src="./images/news/news-1.jpg" alt="news" class="align-right">
+        </div>
+    </div>
+
+</section>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <ul class="footer__social">
+            <li>
+                <a href="#" aria-label="social"></a>
+            </li>
+            <li>
+                <a href="#" aria-label="social"></a>
+            </li>
+            <li>
+                <a href="#" aria-label="social"></a>
+            </li>
+            <li>
+                <a href="#" aria-label="social"></a>
+            </li>
+        </ul>
+    </div>
+</footer>
+<div class="modal" id="appointmentModal">
+    <button class="modal__close" type="button" aria-label="close modal">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11.9979 0C5.37157 0 0 5.37329 0 12.0004C0 18.6267 5.37157 24 11.9979 24C18.6276 24 24 18.6259 24 12.0004C24 5.37329 18.6276 0 11.9979 0ZM17.1574 15.2496L15.2462 17.1583C15.2462 17.1583 12.2227 13.9142 11.997 13.9142C11.7747 13.9142 8.75037 17.1583 8.75037 17.1583L6.83826 15.2496C6.83826 15.2496 10.0857 12.2699 10.0857 12.0047C10.0857 11.7352 6.83826 8.75466 6.83826 8.75466L8.75037 6.8417C8.75037 6.8417 11.7996 10.0875 11.997 10.0875C12.1961 10.0875 15.2462 6.8417 15.2462 6.8417L17.1574 8.75466C17.1574 8.75466 13.9091 11.7782 13.9091 12.0047C13.9091 12.2201 17.1574 15.2496 17.1574 15.2496Z" fill="#125A8F" />
+        </svg>
+    </button>
+    <div class="modal__wrapper">
+        <form action="#" class="form modal__form">
+            <h2 class="modal__title">Запись на приём</h2>
+            <p class="modal__text">Наш консультант перезвонит Вам
+                в течение 15 минут, проконсультирует
+                и подберет подходящего вам специалиста!</p>
+            <div class="form__fields">
+                <label for="modalservice">
+                    <select name="your-service" id="modalservice" class="form__field" required placeholder="Выберите направление">
+                        <option value="Трихология">Трихология</option>
+                        <option value="Косметология">Косметология</option>
+                        <option value="Дерматология">Дерматология</option>
+                        <option value="Подология">Подология</option>
+                    </select>
+                </label>
+            </div>
+            <div class="form__fields">
+                <label for="modalname">
+                    <input type="text" class="form__field" name="your-name" id="modalname" placeholder="Ваше имя" required>
+                </label>
+            </div>
+            <div class="form__fields">
+                <label for="modalphone">
+                    <input type="text" class="form__field phone" name="your-phone" id="modalphone" placeholder="Номер телефона" required>
+                </label>
+            </div>
+            <input type="submit" class="button" value="Оставить заявку">
+        </form>
+    </div>
+</div>
+<div class="backdrop"></div>
+<script src="js/app.min.js"></script>
+</body>
+
+</html>
